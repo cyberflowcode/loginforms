@@ -1,0 +1,62 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+.body1 {
+    font-size: large;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    box-shadow: black;
+    width: 500px; /* Set a larger width for the form */
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+legend {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+label {
+    font-size: 18px;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #5a31ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5a31ee;
+}
+
+@media (max-width: 600px) {
+    fieldset {
+        width: 90%; /* Reduce the width on smaller devices */
+    }
+}

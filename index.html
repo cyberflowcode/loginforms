@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <form>
+        <div class="header">
+            <h2>Student Information</h2>
+            <button class="save-btn" onclick="saveData()">Save</button>
+        </div>
+        <table class="tableMain">
+            
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>First Name</th>
+                    <th>Middle Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Program/Section</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" id="studentId" placeholder="Student ID" maxlength="7" oninput="formatStudentId(this)" required></td>
+                    <td><input type="text" id="firstName" placeholder="First Name" oninput="validateText(this)" required></td>
+                    <td><input type="text" id="middleName" placeholder="Middle Name" oninput="validateText(this)" required></td>
+                    <td><input type="text" id="lastName" placeholder="Last Name" oninput="validateText(this)" required></td>
+                    <td><input type="number" id="age" placeholder="Enter Age" oninput="ageStudent(this)" class="no-spinner" required></td>
+                    <td>
+                        <select id="gender" required>
+                            <option value="">Select</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="section" required>
+                            <option value="">Select</option>
+                            <option value="BSIT-1A">BSIT-1A</option>
+                            <option value="BSIT-1B">BSIT-1B</option>
+                            <option value="BSOA-1A">BSOA-1A</option>
+                            <option value="BSOA-1B">BSOA-1B</option>
+                            <option value="BSCRIM-1A">BSCRIM-1A</option>
+                            <option value="BSCRIM-1B">BSCRIM-1B</option>
+                            <option value="BSCRIM-1C">BSCRIM-1C</option>
+                            <option value="BSCRIM-1D">BSCRIM-1D</option>
+                        </select>
+                    </td>
+                    <td><input type="email" id="email" placeholder="Email" required></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

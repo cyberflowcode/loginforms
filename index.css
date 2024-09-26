@@ -1,0 +1,60 @@
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.save-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+
+thead {
+    text-align: left;
+    background-color: #009879;
+    color: white;
+}
+
+.tableMain {
+    border: 1px solid #009879;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tableMain th, .tableMain td {
+    border: none;
+    padding: 10px; 
+    text-align: left; 
+}
+
+.tableMain input, .tableMain select {
+    width: 100%;
+    padding: 5px; 
+    box-sizing: border-box;
+}
+
+.tableMain select {
+    appearance: none; 
+    background-color: #f9f9f9;
+}
+input[type="number"].no-spinner::-webkit-outer-spin-button,
+input[type="number"].no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
